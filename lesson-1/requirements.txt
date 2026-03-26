@@ -1,0 +1,3 @@
+# Requirements for Lesson 1
+requests
+beautifulsoup4  # Often useful, though standard requests can handle GET
