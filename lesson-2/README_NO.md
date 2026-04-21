@@ -27,3 +27,18 @@ Denne leksjonen fokuserer på hvordan man håndterer data i Python ved å lese f
 -   **Streng-parsing:** `.split()`, `.strip()`.
 -   **Ordbøker (Dictionaries):** Nøkkel-Verdi-par for å telle data.
 -   **Logganalyse:** Identifisere mistenkelige mønstre (Brute Force).
+
+## Læringsmål
+
+Etter denne leksjonen skal eleven kunne:
+
+- Lese en loggfil inn i Python og forklare hvorfor `with open(...)` er nyttig.
+- Dele en logglinje opp i meningsfulle deler som IP-adresse og statuskode.
+- Bruke en ordbok for å telle gjentatte hendelser.
+- Forklare hvorfor gjentatte `401`-responser fra samme IP kan tyde på et brute-force-angrep.
+
+## Rask egenkontroll
+
+- Hva hjelper `with`-setningen oss med når vi jobber med filer?
+- Hvorfor deler vi opp hver logglinje før vi analyserer den?
+- Hvorfor kan mange mislykkede innlogginger fra én IP være mistenkelig?

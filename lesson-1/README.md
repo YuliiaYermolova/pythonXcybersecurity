@@ -15,6 +15,19 @@ This folder contains all the teaching materials for the first lesson of the Pyth
 - `requirements.txt`: Python dependencies needed for the lesson.
 - `lesson-plan.md`: The original lesson plan.
 
+## Learning Goals
+
+After this lesson, students should be able to:
+
+- Explain what `requests.get()` does and what an HTTP response contains.
+- Identify key security headers such as `X-Frame-Options`, `Strict-Transport-Security`, and `Content-Security-Policy`.
+- Use variables, lists, and loops to automate a simple web check.
+- Explain why a missing header or a `<script>` pattern is a clue for further investigation, not automatic proof of a vulnerability.
+
+## Important Note
+
+- The notebook uses `verify=False` only in a controlled lab/demo context. In real systems, certificate problems should be fixed rather than ignored.
+
 ## 🚀 Getting Started
 
 ### Prerequisites

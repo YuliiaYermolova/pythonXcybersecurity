@@ -103,7 +103,9 @@ Skjult metadata sendt av serveren.
 **Viktige Sikkerhetsoverskrifter:**
 - `Strict-Transport-Security`: Tvinger bruk av HTTPS
 - `X-Frame-Options`: Hindrer at nettstedet legges i en iframe (Clickjacking)
-- `Content-Security-Policy`: Begrenser hvor ressurser kan lastes fra
+- `Content-Security-Policy`: Begrenser hvor ressurser kan lastes fra og reduserer XSS-risiko
+
+En manglende header er en grunn til å undersøke videre, ikke automatisk bevis på en feil.
 
 ---
 
@@ -111,12 +113,14 @@ Skjult metadata sendt av serveren.
 
 Injisere ondsinnede skript i pålitelige nettsteder.
 
-**Det røde flagget:** `<script>`-tagger i brukerinndata.
+**Et rødt flagg:** `<script>`-tagger i brukerinndata.
+
+En `<script>`-tag alene beviser ikke XSS. Det viktige er om angriperkontrollert input kan injiseres og kjøres.
 
 ```python
 # Enkel Python-sjekk
 if "<script>" in response.text:
-    print("⚠️ Potensiell XSS funnet!")
+    print("⚠️ Krever gjennomgang: <script>-mønster funnet.")
 ```
 
 ---
@@ -126,6 +130,6 @@ if "<script>" in response.text:
 - **Python** er et kraftig verktøy for automatisering.
 - **Moduler** som `requests` lar oss samhandle med nettverket.
 - **Sikkerhetsoverskrifter** er første forsvarslinje.
-- **XSS** innebærer å injisere skript; vi kan oppdage dem ved å skanne HTML.
+- **XSS**-sjekker starter ofte med enkle mønstre, men ekte verifisering krever kontekst.
 
 **Neste gang:** Filer, Logger, og Digital Etterforskning!

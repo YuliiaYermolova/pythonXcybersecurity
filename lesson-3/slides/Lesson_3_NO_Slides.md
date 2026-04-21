@@ -73,6 +73,8 @@ Vi skal bygge et script som:
 3. Lagrer dem i en fil
 4. Dekrypterer dem når du trenger dem
 
+Dette er kun en pedagogisk demo: en ekte passordbehandler trenger også sikker nøkkellagring og autentisering.
+
 ---
 
 # Ekte feiltrinn
@@ -80,3 +82,4 @@ Vi skal bygge et script som:
 - **RockYou (2009):** Lagret passord i klartekst. Komplett katastrofe.
 
 **Konklusjon:** Meningsfull sikkerhet krever lag på lag (Hashing + Salting + Kryptering).
+Passordbehandleren her er til læring, ikke produksjonsbruk.

@@ -15,6 +15,19 @@ Denne mappen inneholder alt undervisningsmateriell for den første leksjonen i k
 - `requirements.txt`: Python-avhengigheter som trengs for leksjonen.
 - `lesson-plan.md`: Den opprinnelige leksjonsplanen.
 
+## Læringsmål
+
+Etter denne leksjonen skal eleven kunne:
+
+- Forklare hva `requests.get()` gjør og hva et HTTP-svar inneholder.
+- Gjenkjenne viktige sikkerhetsoverskrifter som `X-Frame-Options`, `Strict-Transport-Security` og `Content-Security-Policy`.
+- Bruke variabler, lister og løkker for å automatisere en enkel websjekk.
+- Forklare hvorfor en manglende header eller et `<script>`-mønster er et spor som må undersøkes videre, ikke automatisk bevis på en sårbarhet.
+
+## Viktig merknad
+
+- Notebooken bruker `verify=False` kun i en kontrollert lab/demo-sammenheng. I virkelige systemer skal sertifikatproblemer løses, ikke ignoreres.
+
 ## 🚀 Kom i gang
 
 ### Forutsetninger

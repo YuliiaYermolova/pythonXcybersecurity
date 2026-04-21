@@ -103,7 +103,9 @@ Hidden metadata sent by the server.
 **Key Security Headers:**
 - `Strict-Transport-Security`: Enforce HTTPS
 - `X-Frame-Options`: Prevent site from being put in an iframe (Clickjacking)
-- `Content-Security-Policy`: Restrict where resources can load from
+- `Content-Security-Policy`: Restrict where resources can load from and reduce XSS risk
+
+Missing a header is a reason to investigate further, not automatic proof of a bug.
 
 ---
 
@@ -111,12 +113,14 @@ Hidden metadata sent by the server.
 
 Injecting malicious scripts into trusted websites.
 
-**The Red Flag:** `<script>` tags in user input.
+**A Red Flag:** `<script>` tags in user input.
+
+A `<script>` tag alone does not prove XSS. What matters is whether attacker-controlled input can be injected and executed.
 
 ```python
 # Simple Python check
 if "<script>" in response.text:
-    print("⚠️ Potential XSS found!")
+    print("⚠️ Review needed: <script> pattern found.")
 ```
 
 ---
@@ -126,6 +130,6 @@ if "<script>" in response.text:
 - **Python** is a powerful tool for automation.
 - **Modules** like `requests` let us interact with the network.
 - **Security Headers** are the first line of defense.
-- **XSS** involves injecting scripts; we can detect them by scanning HTML.
+- **XSS** checks often start with simple patterns, but real verification needs context.
 
 **Next time:** Files, Logs, and Digital Forensics!

@@ -73,6 +73,8 @@ We will build a script that:
 3. Saves them to a file
 4. Decrypts them when you need them
 
+Educational demo only: a real password manager also needs secure key storage and authentication.
+
 ---
 
 # Real World Failures
@@ -80,3 +82,4 @@ We will build a script that:
 - **RockYou (2009):** Stored passwords in plain text. Complete disaster.
 
 **Takeaway:** meaningful security requires layers (Hashing + Salting + Encryption).
+Our vault here is for learning, not production use.

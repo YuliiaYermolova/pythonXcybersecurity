@@ -3,7 +3,7 @@
 # Lesson 3: Cryptography & Secrets in Code
 
 ## Overview
-In this lesson, we will explore how to protect data using Python. We will move beyond simple scripts and learn about **functions** and **modules** to build reusable code. We will then dive into the world of **cryptography**, learning the difference between hashing and encryption, and building a secure password vault.
+In this lesson, we will explore how to protect data using Python. We will move beyond simple scripts and learn about **functions** and **modules** to build reusable code. We will then dive into the world of **cryptography**, learning the difference between hashing and encryption, and building a simple educational password vault.
 
 ## Agenda
 1. **Homework Review:** Dictionary Attacks & Salting
@@ -23,3 +23,16 @@ pip install cryptography
 - `notebooks/`: Interactive Jupyter notebooks for the lesson.
 - `slides/`: Presentation slides.
 - `generated/`: (Created during lesson) Encrypted password files.
+
+## Learning Goals
+
+After this lesson, students should be able to:
+
+- Explain the difference between hashing and encryption.
+- Explain why salt is important for password storage.
+- Describe why MD5 is not suitable for secure password storage.
+- Build small reusable functions for encrypting and retrieving data.
+
+## Important Note
+
+- The password vault in this lesson is an educational demo. A real password manager also needs secure key storage, authentication, and stronger error handling.

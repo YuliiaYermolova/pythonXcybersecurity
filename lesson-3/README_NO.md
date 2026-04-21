@@ -3,7 +3,7 @@
 # Leksjon 3: Kryptografi og hemmeligheter i kode
 
 ## Oversikt
-I denne leksjonen skal vi utforske hvordan vi beskytter data ved hjelp av Python. Vi beveger oss utover enkle skript og lærer om **funksjoner** og **moduler** for å bygge gjenbrukbar kode. Deretter dykker vi ned i **kryptografi**, lærer forskjellen på hashing og kryptering, og bygger en sikker passordbehandler.
+I denne leksjonen skal vi utforske hvordan vi beskytter data ved hjelp av Python. Vi beveger oss utover enkle skript og lærer om **funksjoner** og **moduler** for å bygge gjenbrukbar kode. Deretter dykker vi ned i **kryptografi**, lærer forskjellen på hashing og kryptering, og bygger en enkel pedagogisk passordbehandler.
 
 ## Agenda
 1.  **Leksegjennomgang:** Ordbokangrep og Salting
@@ -23,3 +23,16 @@ pip install cryptography
 - `notebooks/`: Interaktive Jupyter notebooks for leksjonen.
 - `slides/`: Presentasjonslysbilder.
 - `generated/`: (Opprettes under leksjonen) Krypterte passordfiler.
+
+## Læringsmål
+
+Etter denne leksjonen skal eleven kunne:
+
+- Forklare forskjellen mellom hashing og kryptering.
+- Forklare hvorfor salt er viktig ved lagring av passord.
+- Beskrive hvorfor MD5 ikke er egnet for sikker passordlagring.
+- Lage små gjenbrukbare funksjoner for å kryptere og hente data.
+
+## Viktig merknad
+
+- Passordbehandleren i denne leksjonen er en pedagogisk demo. En ekte passordbehandler trenger også sikker nøkkellagring, autentisering og bedre feilhåndtering.

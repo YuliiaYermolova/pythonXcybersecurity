@@ -27,3 +27,18 @@ This lesson focuses on how to handle data in Python by reading files and analyzi
 -   **String Parsing:** `.split()`, `.strip()`.
 -   **Dictionaries:** Key-Value pairs for counting data.
 -   **Log Analysis:** Identifying suspicious patterns (Brute Force).
+
+## Learning Goals
+
+After this lesson, students should be able to:
+
+- Read a log file into Python and explain why `with open(...)` is useful.
+- Split a log line into meaningful parts such as IP address and status code.
+- Use a dictionary to count repeated events.
+- Explain why repeated `401` responses from the same IP can indicate a brute-force attack.
+
+## Quick Self-Check
+
+- What does the `with` statement help us do when working with files?
+- Why do we split each log line before analyzing it?
+- Why can many failed logins from one IP be suspicious?
